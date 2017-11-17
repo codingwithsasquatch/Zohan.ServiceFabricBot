@@ -10,6 +10,7 @@ using Microsoft.ServiceFabric.Services.Communication.Runtime;
 using Microsoft.ServiceFabric.Services.Runtime;
 using System.Fabric;
 
+
 namespace ZohanBot
 {
     using Owin;
@@ -21,7 +22,7 @@ namespace ZohanBot
 
         public Startup()
         {
-            //this.serviceContext = serviceContext;
+
         }
 
         public void Configuration(IAppBuilder appBuilder)
@@ -30,6 +31,12 @@ namespace ZohanBot
 
             config.MapHttpAttributeRoutes();
             FormatterConfig.ConfigureFormatters(config.Formatters);
+
+            config.Routes.MapHttpRoute(
+                name: "DefaultApi",
+                routeTemplate: "api/{controller}/{id}",
+                defaults: new { id = RouteParameter.Optional }
+            );
 
             appBuilder.UseWebApi(config);
         }

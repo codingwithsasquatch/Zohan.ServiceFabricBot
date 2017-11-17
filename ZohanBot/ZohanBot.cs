@@ -24,25 +24,10 @@ namespace ZohanBot
         /// <returns>A collection of listeners.</returns>
         protected override IEnumerable<ServiceInstanceListener> CreateServiceInstanceListeners()
         {
-
-            //return new[]
-            //{
-            //    new ServiceInstanceListener(initParams => new OwinCommunicationListener("webapp", new Startup(), initParams))
-            //};
-
-            //ServiceInitializationParameters parms;
- 
-
             return new[]
             {
                 new ServiceInstanceListener(parameters => new OwinCommunicationListener("", new Startup(),  parameters))
             };
-
-            //this.serverHandle = WebApp.Start(this.listeningAddress, appBuilder => this.startup.Configuration(appBuilder));
-            //return new[]
-            //{
-            //    new ServiceInstanceListener(parameters => new OwinCommunicationListenerv2("http://+:43666", new Startup(parameters), parameters))
-            //};
         }
 
         /// <summary>
