@@ -22,12 +22,10 @@ namespace ZohanBot
     {
         private readonly IOwinAppBuilder startup;
         private readonly string appRoot;
-        //private readonly ServiceInitializationParameters serviceInitializationParameters;
         private readonly StatelessServiceContext serviceInitializationParameters;
         private IDisposable serverHandle;
         private string listeningAddress;
 
-        //public OwinCommunicationListener(string appRoot, IOwinAppBuilder startup, ServiceInitializationParameters serviceInitializationParameters)
         public OwinCommunicationListener(string appRoot, IOwinAppBuilder startup, StatelessServiceContext serviceInitializationParameters)
         {
             this.startup = startup;
