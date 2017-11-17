@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "Zohan.ServiceFabricBot", "Zohan.ServiceFabricBot\Zohan.ServiceFabricBot.sfproj", "{C1C654DF-E0BA-41A9-A3C5-C2A25BABE4FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZohanBot", "ZohanBot\ZohanBot.csproj", "{B2E70A5F-A6AC-4CD3-8427-669FCEFA429E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1C654DF-E0BA-41A9-A3C5-C2A25BABE4FC}.Debug|x64.ActiveCfg = Debug|x64
+		{C1C654DF-E0BA-41A9-A3C5-C2A25BABE4FC}.Debug|x64.Build.0 = Debug|x64
+		{C1C654DF-E0BA-41A9-A3C5-C2A25BABE4FC}.Debug|x64.Deploy.0 = Debug|x64
+		{C1C654DF-E0BA-41A9-A3C5-C2A25BABE4FC}.Release|x64.ActiveCfg = Release|x64
+		{C1C654DF-E0BA-41A9-A3C5-C2A25BABE4FC}.Release|x64.Build.0 = Release|x64
+		{C1C654DF-E0BA-41A9-A3C5-C2A25BABE4FC}.Release|x64.Deploy.0 = Release|x64
+		{B2E70A5F-A6AC-4CD3-8427-669FCEFA429E}.Debug|x64.ActiveCfg = Debug|x64
+		{B2E70A5F-A6AC-4CD3-8427-669FCEFA429E}.Debug|x64.Build.0 = Debug|x64
+		{B2E70A5F-A6AC-4CD3-8427-669FCEFA429E}.Release|x64.ActiveCfg = Release|x64
+		{B2E70A5F-A6AC-4CD3-8427-669FCEFA429E}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8361E8E-A595-4544-8A87-A20422C29848}
+	EndGlobalSection
+EndGlobal
