@@ -1,13 +1,11 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web.Http;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
 
-namespace ZohanBot.App_Start
+namespace Zohan.Bot.WebApi
 {
     public static class WebApiConfig
     {

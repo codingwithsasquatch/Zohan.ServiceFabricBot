@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿using System.Net;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 using System.Web.Http;
-using Microsoft.Bot.Connector;
 using Microsoft.Bot.Builder.Dialogs;
+using Microsoft.Bot.Connector;
 
-namespace ZohanBot.Controllers
+namespace Zohan.Bot.WebApi
 {
     [BotAuthentication]
     public class MessagesController : ApiController
